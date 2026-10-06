@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Hearth Form Theory | Interior Design & Architecture Journal</title>
+    <meta name="description" content="About Hearth Form Theory: independent editorial on interior design, architecture, materials and modern living. Meet the team and our editorial principles.">
+    <!-- Open Graph -->
+    <meta property="og:title" content="About — Hearth Form Theory">
+    <meta property="og:description" content="Independent editorial on interior design, architecture, materials and modern living.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hearthformtheory.com/about.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=1200&h=630&fit=crop">
+    <link rel="canonical" href="https://hearthformtheory.com/about.html">
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --ink: #1e1e1e;
+            --paper: #fcfaf7;
+            --paper-warm: #f8f5f0;
+            --accent: #b35e3a;
+            --accent-soft: #d9c7b8;
+            --muted: #6e6a66;
+            --rule: #e2ddd6;
+            --card-bg: #ffffff;
+            --font-serif: 'Georgia', 'Times New Roman', 'Palatino', serif;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            --max-width: 1280px;
+            --gutter: 2rem;
+        }
+
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--paper);
+            color: var(--ink);
+            font-family: var(--font-serif);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        button, input {
+            font-family: inherit;
+            font-size: inherit;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-weight: 400;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: 1.9rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 0.5rem;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+        }
+
+        h4 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            font-family: var(--font-sans);
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+        }
+
+        .meta {
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+        }
+
+        .category-tag {
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent);
+            border: 1px solid var(--accent-soft);
+            padding: 0.2rem 0.75rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 0.75rem;
+            background: #fff;
+        }
+
+        /* ---------- LAYOUT ---------- */
+        .site-wrapper {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--gutter);
+        }
+
+        /* ---------- HEADER ---------- */
+        .blog-header {
+            border-bottom: 1px solid var(--rule);
+            background: var(--paper);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(6px);
+            background: rgba(252, 250, 247, 0.92);
+        }
+
+        .header-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0.8rem var(--gutter);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: baseline;
+            gap: 0.5rem;
+        }
+
+        .logo-mark {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-style: italic;
+            color: var(--ink);
+            letter-spacing: -0.02em;
+            line-height: 1;
+        }
+
+        .logo-mark span {
+            color: var(--accent);
+        }
+
+        .logo-sub {
+            font-family: var(--font-sans);
+            font-size: 0.6rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--muted);
+            border-left: 1px solid var(--rule);
+            padding-left: 0.75rem;
+            margin-left: 0.25rem;
+        }
+
+        .main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem 1.5rem;
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .main-nav a {
+            color: var(--ink);
+            opacity: 0.75;
+            transition: opacity 0.15s;
+            padding: 0.25rem 0;
+            border-bottom: 2px solid transparent;
+        }
+
+        .main-nav a:hover, .main-nav a.active {
+            opacity: 1;
+            border-bottom-color: var(--accent);
+        }
+
+        .search-toggle {
+            background: none;
+            border: 1px solid var(--rule);
+            border-radius: 30px;
+            padding: 0.4rem 1rem;
+            font-family: var(--font-sans);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--muted);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            transition: 0.2s;
+        }
+
+        .search-toggle:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .search-bar {
+            display: none;
+            width: 100%;
+            padding: 0.75rem 0;
+        }
+
+        .search-bar.open {
+            display: block;
+        }
+
+        .search-bar input {
+            width: 100%;
+            padding: 0.9rem 1.2rem;
+            font-family: var(--font-sans);
+            font-size: 0.95rem;
+            border: 1px solid var(--rule);
+            border-radius: 6px;
+            background: var(--card-bg);
+            outline: none;
+            transition: 0.2s;
+        }
+
+        .search-bar input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(179, 94, 58, 0.08);
+        }
+
+        /* ---------- CATEGORY BAR ---------- */
+        .category-bar {
+            border-bottom: 1px solid var(--rule);
+            background: var(--paper-warm);
+            padding: 0.6rem 0;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .category-bar-inner {
+            max-width: var(--max-width);
+            margin: 0 auto;
+            padding: 0 var(--gutter);
+            display: flex;
+            gap: 0.25rem 1.25rem;
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+        }
+
+        .category-bar-inner a {
+            color: var(--muted);
+            padding: 0.3rem 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.15s;
+        }
+
+        .category-bar-inner a:hover, .category-bar-inner a.active {
+            color: var(--accent);
+            border-bottom-color: var(--accent);
+        }
+
+        /* ---------- ABOUT PAGE SPECIFIC ---------- */
+        .about-hero {
+            padding: 3rem 0 2.5rem;
+            text-align: center;
+            border-bottom: 1px solid var(--rule);
+        }
+
+        .about-hero h1 {
+            font-size: 3.2rem;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .about-hero .subhead {
+            font-family: var(--font-sans);
+            font-size: 1rem;
+            color: var(--muted);
+            max-width: 680px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 3.5rem;
+            padding: 3rem 0 4rem;
+        }
+
+        .about-main h2 {
+            margin-top: 2rem;
+        }
+
+        .about-main h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .about-main p {
+            color: #3d3a37;
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .about-main .pull-quote {
+            border-left: 4px solid var(--accent);
+            padding: 0.5rem 0 0.5rem 1.75rem;
+            margin: 2rem 0;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: var(--ink);
+            line-height: 1.5;
+        }
+
+        .about-main .pull-quote::before {
+            content: "“";
+            font-size: 2.5rem;
+            color: var(--accent);
+            line-height: 0;
+            vertical-align: -0.5rem;
+            margin-right: 0.25rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .value-item {
+            background: var(--card-bg);
+            border: 1px solid var(--rule);
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .value-item h3 {
+            font-size: 1.1rem;
+            font-family: var(--font-sans);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.5rem;
+            color: var(--accent);
+        }
+
+        .value-item p {
+            font-size: 0.95rem;
+            margin-bottom: 0;
+            color: #3d3a37;
+        }
+
+        .team-section {
+            margin: 3rem 0 1rem;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 1.5rem;
+        }
+
+        .team-member {
+            text-align: center;
+            background: var(--card-bg);
+            border: 1px solid var(--rule);
+            border-radius: 8px;
+            padding: 1.5rem 1rem;
+        }
+
+        .team-member img {
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+        }
+
+        .team-member h4 {
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.15rem;
+            color: var(--ink);
+        }
+
+        .team-member .role {
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .team-member p {
+            font-size: 0.85rem;
+            color: var(--muted);
+            margin-bottom: 0;
+            line-height: 1.5;
+        }
+
+        /* Sidebar (reused from index) */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2.5rem;
+        }
+
+        .sidebar-block {
+            background: var(--card-bg);
+            border: 1px solid var(--rule);
+            border-radius: 8px;
+            padding: 1.75rem;
+        }
+
+        .sidebar-block h3 {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.25rem;
+            color: var(--ink);
+        }
+
+        .sidebar-block ul {
+            list-style: none;
+        }
+
+        .sidebar-block li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0ece6;
+            font-size: 0.9rem;
+        }
+
+        .sidebar-block li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-block li a:hover {
+            color: var(--accent);
+        }
+
+        .newsletter-block input {
+            width: 100%;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--rule);
+            border-radius: 4px;
+            margin-bottom: 0.75rem;
+            font-family: var(--font-sans);
+            font-size: 0.85rem;
+        }
+
+        .newsletter-block button {
+            width: 100%;
+            padding: 0.75rem;
+            background: var(--ink);
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .newsletter-block button:hover {
+            background: var(--accent);
+        }
+
+        /* ---------- FOOTER ---------- */
+        .editorial-footer {
+            border-top: 1px solid var(--rule);
+            padding: 2.5rem 0;
+            background: var(--paper);
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            font-family: var(--font-sans);
+            font-size: 0.7rem;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+
+        /* ---------- RESPONSIVE ---------- */
+        @media (max-width: 1024px) {
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 700px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .about-hero h1 {
+                font-size: 2.2rem;
+            }
+            .about-hero .subhead {
+                font-size: 0.9rem;
+            }
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav {
+                font-size: 0.7rem;
+                gap: 0.5rem 1rem;
+            }
+            .values-grid {
+                grid-template-columns: 1fr;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .logo-sub {
+                display: none;
+            }
+        }
+
+        /* ---------- UTILITY ---------- */
+        .section-label {
+            font-family: var(--font-sans);
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .text-link {
+            color: var(--accent);
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            transition: opacity 0.15s;
+        }
+
+        .text-link:hover {
+            opacity: 0.75;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="blog-header">
+    <div class="header-inner">
+        <div class="logo">
+            <span class="logo-mark">Hearth<span>·</span>Form<span>·</span>Theory</span>
+            <span class="logo-sub">Design Journal</span>
+        </div>
+        <nav class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms Of Privacy</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="cookies.html">Cookies Policy</a></li>
+            <li><a href="disclaimer.html">Disclaimer</a></li>
+            <li><a href="categories.html">Categories</a></li>
+        </nav>
+        <button class="search-toggle" id="searchToggle" aria-label="Toggle search">🔍 Search</button>
+    </div>
+    <div class="search-bar" id="searchBar">
+        <div style="max-width:var(--max-width);margin:0 auto;padding:0 var(--gutter);">
+            <input type="text" id="searchInput" placeholder="Search articles, topics, materials…" aria-label="Search articles">
+        </div>
+    </div>
+</header>
+
+<!-- ========== CATEGORY BAR ========== -->
+<div class="category-bar">
+    <div class="category-bar-inner">
+        <a href="#">All</a>
+        <a href="#">Interior Design</a>
+        <a href="#">Architecture</a>
+        <a href="#">Home Design</a>
+        <a href="#">Materials</a>
+        <a href="#">Space Planning</a>
+        <a href="#">Lighting</a>
+        <a href="#">Furniture</a>
+        <a href="#">Modern Homes</a>
+        <a href="#">Renovation</a>
+        <a href="#">Sustainable</a>
+    </div>
+</div>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main class="site-wrapper">
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+        <span class="section-label" style="margin-bottom:0.5rem;">About the journal</span>
+        <h1>Hearth · Form · Theory</h1>
+        <p class="subhead">Independent editorial on interior design, architecture, materials and the built environment. We publish practical guides, critical essays and field notes for designers, architects and curious homeowners.</p>
+    </section>
+
+    <!-- ABOUT CONTENT GRID -->
+    <div class="about-content">
+
+        <!-- MAIN COLUMN -->
+        <div class="about-main">
+
+            <span class="section-label">Our story</span>
+            <h2>Design journalism with a point of view</h2>
+            <p>Hearth Form Theory began as a conversation between an architect and a writer who were tired of the same recycled interiors coverage. Too much of it was surface-level — pretty pictures without context, trends without consequence. We wanted something slower, more considered, and genuinely useful.</p>
+            <p>Today, we publish in-depth articles, case studies and long-form field notes that explore how spaces actually work: how light moves through a room, how materials age, how a floor plan shapes the rhythm of daily life. We believe good design writing should be as thoughtful as good design itself.</p>
+
+            <div class="pull-quote">
+                The most memorable rooms are often the ones that know what to leave out. We write about the spaces that get that balance right — and the thinking behind them.
+            </div>
+
+            <h2>What we cover</h2>
+            <p>Our editorial spans interior design, residential architecture, materials, space planning, lighting, furniture and sustainable building. We're less interested in trends than in principles — the enduring ideas that make spaces feel right, decade after decade.</p>
+            <p>Whether you're an architect specifying a facade, a designer planning a lighting scheme, or a homeowner about to renovate a kitchen, we aim to give you something you can actually use. That means clear explanations, real examples, and a healthy respect for both beauty and budget.</p>
+
+            <div class="values-grid">
+                <div class="value-item">
+                    <h3>Independence</h3>
+                    <p>We are editorially independent. Our content is never paid for by brands or PR agencies, and we clearly label any sponsored or partner content.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Depth</h3>
+                    <p>We take the time to research, interview and think. Our articles are longer because the subjects deserve it — not because we like the sound of our own voice.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Practicality</h3>
+                    <p>Every piece aims to leave you with something actionable: a principle, a checklist, a question to ask your builder. Inspiration is good. Utility is better.</p>
+                </div>
+                <div class="value-item">
+                    <h3>Respect</h3>
+                    <p>We write for a smart, curious audience. No jargon for its own sake, no dumbing down. We trust you to follow a good argument.</p>
+                </div>
+            </div>
+
+            <h2>Editorial principles</h2>
+            <p>We follow a simple set of rules. First: accuracy over speed. If we're not sure, we check. Second: transparency. We disclose our sources, our methods and our mistakes. Third: independence. We don't accept payment for coverage, and we don't let advertisers influence what we publish.</p>
+            <p>We also believe that criticism has a place in design writing. Not everything new is good, and not everything old is worth keeping. Our job is to help you tell the difference.</p>
+
+            <!-- TEAM SECTION -->
+            <div class="team-section">
+                <span class="section-label">The team</span>
+                <h2>Who we are</h2>
+                <p>Hearth Form Theory is written and edited by a small team of architects, designers and journalists based across Europe and North America. We also work with a network of invited practitioners who contribute field notes and case studies from their own projects.</p>
+
+                <div class="team-grid">
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face" alt="Portrait of Elena Marchetti, Editor-in-Chief">
+                        <h4>Elena Marchetti</h4>
+                        <div class="role">Editor-in-Chief</div>
+                        <p>Architect and writer covering material culture and domestic space. Based in Milan and Lisbon.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face" alt="Portrait of David Chen, Senior Editor">
+                        <h4>David Chen</h4>
+                        <div class="role">Senior Editor</div>
+                        <p>Specialises in architecture, structure and the honest expression of materials. Based in Vancouver.</p>
+                    </div>
+                    <div class="team-member">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=200&h=200&fit=crop&crop=face" alt="Portrait of Mira Solberg, Contributing Editor">
+                        <h4>Mira Solberg</h4>
+                        <div class="role">Contributing Editor</div>
+                        <p>Focuses on small-space living, urban density and the design of everyday life. Based in Copenhagen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Work with us</h2>
+            <p>We're always open to pitches from writers, designers and architects who share our approach. If you have a story idea, a case study, or a perspective we haven't covered, we'd love to hear from you. Visit our <a href="contact.html" class="text-link">contact page</a> to get in touch.</p>
+            <p>For advertising and partnership enquiries, please email <a href="mailto:partners@hearthformtheory.com" class="text-link">partners@hearthformtheory.com</a>. We keep our commercial relationships separate from our editorial decisions, always.</p>
+
+        </div>
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="sidebar-block">
+                <h3>Popular this month</h3>
+                <ul>
+                    <li><a href="#">The Quiet Power of Negative Space</a></li>
+                    <li><a href="#">Material Honesty: Concrete, Wood, Stone</a></li>
+                    <li><a href="#">Small Space, Big Move</a></li>
+                    <li><a href="#">The Architecture of Light</a></li>
+                    <li><a href="#">Warm Minimalism: Less Cold, More Soul</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-block newsletter-block">
+                <h3>Newsletter</h3>
+                <p style="font-size:0.85rem;margin-bottom:1rem;">A weekly edit of our best articles, plus design intelligence you won't find elsewhere.</p>
+                <input type="email" placeholder="Your email address" aria-label="Email address">
+                <button type="button" onclick="alert('Thank you for subscribing to Hearth Form Theory.')">Subscribe</button>
+            </div>
+
+            <div class="sidebar-block">
+                <h3>Topics</h3>
+                <ul>
+                    <li><a href="#">Interior Design</a></li>
+                    <li><a href="#">Architecture</a></li>
+                    <li><a href="#">Home Design</a></li>
+                    <li><a href="#">Materials</a></li>
+                    <li><a href="#">Space Planning</a></li>
+                    <li><a href="#">Lighting</a></li>
+                    <li><a href="#">Furniture</a></li>
+                    <li><a href="#">Modern Homes</a></li>
+                    <li><a href="#">Sustainable Design</a></li>
+                    <li><a href="#">Renovation</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-block">
+                <h3>Follow us</h3>
+                <ul>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Pinterest</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#">RSS Feed</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer class="editorial-footer">
+    <div class="site-wrapper">
+        <div class="footer-inner">
+            <div>© 2025 Hearth Form Theory. Independent design journalism.</div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="terms.html">Terms</a>
+                <a href="cookies.html">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+    // ---------- SEARCH TOGGLE ----------
+    const searchToggle = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+    const searchInput = document.getElementById('searchInput');
+
+    searchToggle.addEventListener('click', function() {
+        searchBar.classList.toggle('open');
+        if (searchBar.classList.contains('open')) {
+            searchInput.focus();
+        }
+    });
+
+    // ---------- SMOOTH SCROLL FOR ANCHOR LINKS ----------
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const href = this.getAttribute('href');
+            if (href === '#') return;
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // ---------- ACTIVE NAV HIGHLIGHT (basic, since this is about page) ----------
+    // Already set with class="active" on About link.
+</script>
+
+</body>
+</html>
